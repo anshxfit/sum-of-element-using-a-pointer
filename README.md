@@ -1,23 +1,16 @@
-# html webpage that links one webpage
-page 1
-<HTML>
-<HEAD>
-<TITLE>HOME PAGE</TITLE>
-</HEAD>
-<BODY BGCOLOR="YELLOW">
-<H1>WELCOME TO MY WEBSITE</H1>
-<P>CLICK THE LINK BELOE TO GO TO THE NEXT PAGE:</P>
-<A HREF="page2.html">GO TO PAGE 2</A>
-</BODY>
-</HTML>OneDrive
-page 2
-<HTML>
-<HEAD>
-<TITLE>PAGE 2</TITLE>
-</HEAD>
-<BODY BGCOLOR="LIGHTGREEN">
-<H1>THIS IS PAGE 2</H1>
-<P>YOU CAME FROM THE HOME PAGE</P>
-<A HREF="index.html">BACK TO HOME</A>
-</BODY>
-</HTML>
+# c++ sum of elements using a pointer
+# include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int arr[5]={10,20,30,40,50};
+int*ptr;
+int sum=0,i;
+ptr=arr;
+for(i=0,i<5;i++){
+sum=sum+*(ptr+i);
+}
+cout<<"sum of array elements="<<sum;
+getch();
+}
